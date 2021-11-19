@@ -17,6 +17,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
+import Tutorial from "./pages/Tutorial";
 
 
 
@@ -97,6 +98,9 @@ function App() {
           <Link to="/gallery">
             gallery
           </Link>
+          <Link to="/tutorial">
+            tutorial
+          </Link>
         </div>
         <Switch>
           <Route exact path= "/">
@@ -113,6 +117,9 @@ function App() {
           </Route>
           <Route path="/gallery">
             <Gallery />
+          </Route>
+          <Route path="/tutorial">
+            <Tutorial />
           </Route>
         </Switch>
       </Router>
