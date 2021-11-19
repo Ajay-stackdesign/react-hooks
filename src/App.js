@@ -16,6 +16,7 @@ import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Gallery from "./pages/Gallery";
 
 
 
@@ -92,6 +93,11 @@ function App() {
         <div>
           <Link to="/about">About</Link>
         </div>
+        <div>
+          <Link to="/gallery">
+            gallery
+          </Link>
+        </div>
         <Switch>
           <Route exact path= "/">
             <Home />
@@ -104,6 +110,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
           </Route>
         </Switch>
       </Router>
