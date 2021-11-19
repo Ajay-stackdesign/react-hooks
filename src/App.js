@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 
 
@@ -88,6 +89,9 @@ function App() {
         <div>
           <Link to="/contact">Contact</Link>
         </div>
+        <div>
+          <Link to="/about">About</Link>
+        </div>
         <Switch>
           <Route exact path= "/">
             <Home />
@@ -97,6 +101,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </Router>
