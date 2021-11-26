@@ -9,7 +9,7 @@ import Imperativehandle from "./Imperatie/ImperativeHandle";
 import Context from "./Context";
 import Car from "./Car";
 import Event from "./Event";
-import Conditional from "./Conditional";
+// import Conditional from "./Conditional";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import { Routes } from 'react-router-dom';
 import Home from "./pages/Home";
@@ -37,16 +37,16 @@ function App() {
   //   { id: "ford", name: "sahani" },
   //   { id: "mercedy", name: "geeta"}
   // ]
-  const cars = [
-    {id: 1, brand: 'Ford'},
-    {id: 2, brand: 'BMW'},
-    {id: 3, brand: 'Audi'}
-  ];
-  const controllerName = [
-    {id: 1, name: "Airport Controller" },
-    {id: 2, name: "Train Controller" },
-    {id: 3, name: "Bus controller" }
-  ]
+  // const cars = [
+  //   {id: 1, brand: 'Ford'},
+  //   {id: 2, brand: 'BMW'},
+  //   {id: 3, brand: 'Audi'}
+  // ];
+  // const controllerName = [
+  //   {id: 1, name: "Airport Controller" },
+  //   {id: 2, name: "Train Controller" },
+  //   {id: 3, name: "Bus controller" }
+  // ]
   
   useEffect(() => {
     setUser("let buil it") 
@@ -66,18 +66,19 @@ function App() {
       {/* <Car model= "BMW" /> */}
       {/* <Car model= { carInfo } /> */}
       <Event />
+      <Car />
       {/* {cars.map((car) => <Car key={car.id} brand={car.name} />)}
        */}
-      <ul>
-        {cars.map((car) => <Car key={car.id} brand={car.brand} />)}
+      {/* <ul> */}
+        {/* {cars.map((car) => <Car key={car.id} brand={car.brand} />)} */}
       
        {/* {cars.map((car) => <Car key={car.id} brand={car.brand} />)} */}
       
         {/* { controllerName.map((controller) => <Car key1={controller.id} brand1={controller.name} />)} */}
-      </ul>
-      <ul>
-        { controllerName.map((controller) => <Conditional key1={controller.id} brand1={controller.name} />)}
-      </ul>
+      {/* </ul> */}
+      {/* // <ul> */}
+        {/* { controllerName.map((controller) => <Conditional key1={controller.id} brand1={controller.name} />)} */}
+      {/* </ul> */}
 
       <Router>
         <div>
