@@ -52,12 +52,12 @@ const Reducer1 = () => {
     
     return(
         <div>
-            <h1>{ state.count}</h1>
+            <h1>{ state.count }</h1>
             <button onClick={() => {
-                dispatch({ type: "INCREMENT"});
-                dispatch({type: "toggleShowText"})
+                dispatch({ type: "INCREMENT" });
+                dispatch({ type: "toggleShowText" })
             }}>click me</button>
-            { state.showText && <p>this the text</p>}
+            { state.showText && <p>this the text</p> }
         </div>    
     )
 }
